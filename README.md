@@ -1,2 +1,2 @@
 # Web-Final-project
-оопорпорпрпо
+Online store for Qazaq Republic
