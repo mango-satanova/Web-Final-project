@@ -61,3 +61,31 @@ function openSide () {
         hamburger.classList.add('open')
     }
 }
+
+Vue.use(VueMaterial.default)
+
+        var example = {
+            methods:{
+                download: function(){
+                    let email = document.getElementById("emailAddress");
+                    let fullname = document.getElementById("messagee");
+                    let mes = document.getElementById("message");
+
+                    let data = "Question from user " + "\n" +  
+                    "\nEmail: " + email.value + "\n " + 
+                    "\nFullname: " + fullname.value + "\n" +
+                    "\nMessage: " + mes.value + "\n " ;
+
+
+                    var blob = new Blob([ data ], { "type" : "text/plain" });
+                    let link = document.createElement('a')
+                    link.href = window.URL.createObjectURL(blob)
+                    link.download = 'information.txt'
+                    link.click()
+                }
+            }
+        }
+
+        var app = new Vue(example)
+
+        app.$mount("#app");
