@@ -261,7 +261,7 @@ header{
 
 .content{
 	padding: 40px;
-    background: url(".//hoodieb.jpeg");
+    background: url("./img/hoodieb.jpeg");
     background-size: 4%;
 
 }
@@ -316,7 +316,7 @@ header{
 }
 
 .imageblock2:hover{
-    background: url("./123/jeideler/jeide/j.jpg") no-repeat ;
+    background: url("./123/jeideler/jeide/j8.jpg") no-repeat ;
     background-size: 300px;
 }
 

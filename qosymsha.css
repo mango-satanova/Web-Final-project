@@ -1,35 +1,3 @@
-/* .container {
-    position: relative;
-} */
-/* *{
-    margin: 0;
-} */
-/* body{
-    background-color: #0046c0;
-}
-.containerbackground {
-   font-family: "Podkova",serif;
-    font-size: 100px;
-    position: absolute;
-    margin-top: 10px;
-    z-index: -1;
-    /* transform: rotate(100deg);
-    -webkit-transform: rotate(300deg); */
-    /* color: #dee0e4b3; */
-/* } */
-/* .text{
-font-family: "Podkova",serif;
-color: #fff;
-/* margin-bottom: 500px; */
-/* z-index: 1;
-font-size: 30px;
-position: absolute;
-margin-top: 22px;
-margin-left: 60px;
-}  */
-
-
-
 *,
 *::after,
 *::before{
@@ -284,6 +252,18 @@ header{
     }
 }
 
+.button {
+    text-decoration: none;
+    color: #0046c0;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-radius: 13px;
+    border: 3px solid #0046c0;
+    padding: 6px 20px;
+  }
+
 @media (max-width:740px) {
     .qazrep{
         font-size:28px;
@@ -365,7 +345,7 @@ header{
 
 .content{
 	padding: 40px;
-    background: url("../shopper.png");
+    background: url("./img/shopper.png");
     background-size: 12%;
 
 }
@@ -397,6 +377,7 @@ header{
     text-align: center;
     position: relative;
         display: inline-block;
+        padding-bottom: 10px;
 }
 
 .imageblock1{
@@ -615,108 +596,91 @@ header{
 
 .coastel{
 	font-size: 15px;
+    padding-bottom: 10px;
 }
-/* .img-top{
-height: 300px;  
-display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 99;
-} */
-/* .cardblock:hover .img-top{
-    display: inline; */
-/* } */
 
-/* Image zoom on hover + Overlay colour */
-.parent{
-    overflow: hidden;
-    display: inline-block;
-    cursor: pointer;
-    padding: 5px;
-  }
-  .twos{
-      display: flex;
-  }
-  .pone{
-    width: 30%;
-    height: 550px;
-  }
-  .ptwo{
-    width: 70%;
-    height: 550px;
-  }
-  .child{
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-  }
-  .child a{
-    font-family: 'Podkova',serif;
-  }
-  .bg-one{
-    background-image: url("./123/jeans/logo_jeans.jpg");
-    background-position: center;
-  }
-  .bg-two{
-    background-image: url("./123/jeideler/jeide_logo2.jpg");
-    background-position: center;
-  }
-  .bg-three{
-    background-image: url("./123/usak-tuyek/usak_logo.jpg");
-    background-position: center;
-  }
-  .bg-four{
-    background-image: url("/123/gift/gift_logo.jpg");
-    background-position: center;
-  }
-
-  .grads {
-    display: none;
-    font-size: 235%;
-    color: #ffffff ;
-    font-family: sans-serif;
-    text-align: center;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 50px;
-    cursor: pointer;
-  }
-  
-  .parent:hover .child, .parent:focus .child {
-    -ms-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  
-  .parent:hover .child:before, .parent:focus .child:before {
-    display: block;
-  }
-  
-  .parent:hover a, .parent:focus a {
-    display: block;
-  }
-  
-  .child:before {
-    content: "";
-    display: none;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(180deg, rgb(90, 92, 94) 0%, rgb(233, 241, 243) 100%);
-    opacity: 0.9;
-  }
+@media (max-width:1200px) {
+    .rowblock{
+    display: grid;
+}
+.nameblock{
+    font-size: 30px;
+    padding-left: 30px;
+}
+}
+@media (max-width:740px) {
+    .qazrep{
+        font-size:28px;
+    }
+    .qazrep p{
+        margin-top: 10px;
+    }
+    .logo{
+        height: 50px;
+    }
+    header{
+        height: 80px;
+    }
+    .sidebar{
+        top: 80px;
+        width: 200px;
+    }
+    .menu__link{
+        font-size: 25px;
+    }
+    .hamburger span {
+        height:3px;
+    }
+    .hamburger {
+        width:26px;
+        height:26px;}
+}
+@media (max-width:630px) {
+    .logo{
+        height: 40px;
+    }
+    .qazrep p{
+        margin-top: 5px;
+    }
+    header{
+        height: 80px;
+    }
+    .sidebar{
+        top: 80px;
+        width: 180px;
+    }
+    .menu__link{
+        font-size: 20px;
+    }
+    .hamburger span {
+        height:3px;
+    }
+    .hamburger {
+        width:26px;
+        height:26px;}
+}
+@media (max-width:605px) {
+    .qazrep{
+        display: none;
+    }
+    .logo{
+        height: 50px;
+    }
+    header{
+        height: 80px;
+    }
+    .sidebar{
+        top: 80px;
+        width: 200px;
+    }
+    .menu__link{
+        font-size: 25px;
+    }
+    .hamburger span {
+        height:3px;
+    }
+    .hamburger {
+        width:26px;
+        height:26px;}
+}
 
